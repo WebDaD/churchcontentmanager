@@ -1,0 +1,35 @@
+{
+  "name": "content_tool",
+  "productName": "FeG FFB Content Tool",
+  "version": "0.0.1",
+  "description": "Small Tool to create Content for social Media",
+  "license": "Unlicense",
+  "repository": "WebDaD/contentTool",
+  "main":"main.js",
+  "author": {
+    "name": "Dominik Sigmund",
+    "email": "dominik.sigmund@webdad.eu",
+    "url": "https://github.com/WebDaD/"
+  },
+  "scripts": {
+    "test": "xo",
+    "start": "electron .",
+    "build": "electron-packager . --out=dist --asar --overwrite --all"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "electron-data": "^2.1.0"
+  },
+  "devDependencies": {
+    "devtron": "^1.1.0",
+    "electron-packager": "^8.0.0",
+    "electron": "^1.6.6",
+    "xo": "^0.18.0"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "browser"
+    ]
+  }
+}
