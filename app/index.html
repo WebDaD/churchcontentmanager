@@ -1,17 +1,46 @@
 <!doctype html>
-<html>
+<html  ng-app='ctApp'>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
-		<link rel="stylesheet" href="index.css">
-		<title>FeG FFB ContentTool</title>
+		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<link rel="manifest" href="images/site.webmanifest">
+		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#900000">
+		<link rel="shortcut icon" href="images/favicon.ico">
+		<meta name="msapplication-TileColor" content="#900000">
+		<meta name="msapplication-config" content="images/browserconfig.xml">
+		<meta name="theme-color" content="#900000">
+		<title>FeG ContentTool</title>
 	</head>
-	<body>
+	<body ng-controller="ctApp-Main as ctrl">
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img src="images/android-chrome-192x192.png" style="width:72px;height:auto;"/>
+						FeG ContentTool
+					</a>
+				</div>
+				<div class="btn-group navbar-right" role="group" aria-label="...">
+					<button id="minimize-btn" class="btn btn-default navbar-btn" type="button" ng-click="ctrl.minimizeApp();">
+						<i class="fa fa-window-minimize"></i>
+					</button>
+					<button id="maximize-btn" class="btn btn-default navbar-btn" type="button" ng-click="ctrl.maximizeApp();">
+						<i class="fa fa-window-maximize"></i>
+					</button>
+					<button id="close-btn" class="btn btn-default navbar-btn" type="button" ng-click="ctrl.closeApp();">
+						<i class="fa fa-window-close"></i>
+					</button>
+				</div>
+			</div>
+		</nav>
 		<div class="container">
-			<header>
-				<h1>FeG FFB ContentTool</h1>
-			</header>
 			<section class="main">
 				<h2>Sermons</h2>
 				<table class="table">
@@ -35,5 +64,6 @@
 			<footer></footer>
 		</div>
 	</body>
-	<script src="renderer.js"></script>
+	<script src="../node_modules/angular/angular.min.js"></script>
+	<script src="js/ctapp.js"></script>
 </html>

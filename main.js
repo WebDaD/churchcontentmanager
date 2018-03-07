@@ -24,7 +24,10 @@ if (!electronData.has('config')) {
 app.on('ready', function () {
   mainWindow = new BrowserWindow({
     backgroundColor: 'lightgray',
+    icon: path.join(__dirname, '/app/images/favicon.ico'),
     title: pack.productName,
+    titleBarStyle: 'hidden',
+    frame: false,
     show: false,
     webPreferences: {
       nodeIntegration: true,

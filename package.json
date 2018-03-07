@@ -5,7 +5,7 @@
   "description": "Small Tool to create Content for social Media",
   "license": "Unlicense",
   "repository": "WebDaD/contentTool",
-  "main":"main.js",
+  "main": "main.js",
   "author": {
     "name": "Dominik Sigmund",
     "email": "dominik.sigmund@webdad.eu",
@@ -17,8 +17,10 @@
     "build": "electron-packager . --out=dist --asar --overwrite --all"
   },
   "dependencies": {
+    "angular": "^1.6.9",
     "bootstrap": "^4.0.0",
-    "electron-data": "^2.1.0"
+    "electron-data": "^2.1.0",
+    "font-awesome": "^4.7.0"
   },
   "devDependencies": {
     "devtron": "^1.1.0",
