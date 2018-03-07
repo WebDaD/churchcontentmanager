@@ -1,4 +1,4 @@
-# FeG Content Tool [![XO code style](https://img.shields.io/badge/code_style-XO-5ed9c7.svg)](https://github.com/sindresorhus/xo)
+# FeG Content Tool [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 > Will Take Input and produce Output!
 
