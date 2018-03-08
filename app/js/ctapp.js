@@ -16,7 +16,7 @@ const remote = require('electron').remote
       })
       .otherwise({ redirectTo: '/index' })
   }])
-  .run(['$rootScope', function ($rootScope) {
+  .run(['$rootScope','$location', function ($rootScope, $location) {
     $rootScope.window = remote.getCurrentWindow()
     $rootScope.closeApp = function () {
       $rootScope.window.close()
@@ -32,7 +32,7 @@ const remote = require('electron').remote
       }
     }
     $rootScope.settings = function () {
-      window.location = '/settings'
+      $location.path('/settings')
     }
   }])
 }())

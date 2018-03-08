@@ -4,6 +4,10 @@ body {
 	margin: 0;
 }
 
+.image-btn {
+	cursor: pointer;
+}
+
 #settings-btn {
 	position: fixed;
 	bottom:10px;
