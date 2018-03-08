@@ -1,22 +1,38 @@
 /* global angular */
 const remote = require('electron').remote
 ;(function () {
-  angular.module('ctApp', [])
-  .controller('ctApp-Main', ['$scope', function ($scope) {
-    var self = this
-    self.window = remote.getCurrentWindow()
-    self.closeApp = function () {
-      self.window.close()
+  angular.module('ctApp', ['ngRoute'])
+  .config(['$routeProvider', function ($routeProvider) {
+    $routeProvider
+      .when('/index', {
+        controller: 'ctApp-Index',
+        controllerAs: 'ctrl',
+        templateUrl: 'templates/index.html'
+      })
+      .when('/settings', {
+        controller: 'ctApp-Settings',
+        controllerAs: 'ctrl',
+        templateUrl: 'templates/settings.html'
+      })
+      .otherwise({ redirectTo: '/index' })
+  }])
+  .run(['$rootScope', function ($rootScope) {
+    $rootScope.window = remote.getCurrentWindow()
+    $rootScope.closeApp = function () {
+      $rootScope.window.close()
     }
-    self.minimizeApp = function () {
-      self.window.minimize()
+    $rootScope.minimizeApp = function () {
+      $rootScope.window.minimize()
     }
-    self.maximizeApp = function () {
-      if (!self.window.isMaximized()) {
-        self.window.maximize()
+    $rootScope.maximizeApp = function () {
+      if (!$rootScope.window.isMaximized()) {
+        $rootScope.window.maximize()
       } else {
-        self.window.unmaximize()
+        $rootScope.window.unmaximize()
       }
+    }
+    $rootScope.settings = function () {
+      window.location = '/settings'
     }
   }])
 }())

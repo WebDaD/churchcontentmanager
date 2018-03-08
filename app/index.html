@@ -18,7 +18,7 @@
 		<meta name="theme-color" content="#900000">
 		<title>FeG ContentTool</title>
 	</head>
-	<body ng-controller="ctApp-Main as ctrl">
+	<body>
 		<nav class="navbar navbar-default">
 			<div class="container-fluid">
 				<div class="navbar-header">
@@ -28,43 +28,28 @@
 					</a>
 				</div>
 				<div class="btn-group navbar-right" role="group" aria-label="...">
-					<button id="minimize-btn" class="btn btn-default navbar-btn" type="button" ng-click="ctrl.minimizeApp();">
+					<button id="minimize-btn" class="btn btn-default navbar-btn" type="button" ng-click="minimizeApp();">
 						<i class="fa fa-window-minimize"></i>
 					</button>
-					<button id="maximize-btn" class="btn btn-default navbar-btn" type="button" ng-click="ctrl.maximizeApp();">
+					<button id="maximize-btn" class="btn btn-default navbar-btn" type="button" ng-click="maximizeApp();">
 						<i class="fa fa-window-maximize"></i>
 					</button>
-					<button id="close-btn" class="btn btn-default navbar-btn" type="button" ng-click="ctrl.closeApp();">
+					<button id="close-btn" class="btn btn-default navbar-btn" type="button" ng-click="closeApp();">
 						<i class="fa fa-window-close"></i>
 					</button>
 				</div>
 			</div>
 		</nav>
 		<div class="container">
-			<section class="main">
-				<h2>Sermons</h2>
-				<table class="table">
-					<tr>
-						<th>Title</th>
-						<th>Date</th>
-						<th>*</th>
-					</tr>
-					<tr>
-						<td>Sermon 1</td>
-						<td>01.03.2018</td>
-						<td>Edit | Delete</td>
-					</tr>
-					<tr>
-						<td>Sermon 2</td>
-						<td>02.03.2018</td>
-						<td>Edit | Delete</td>
-					</tr>
-				</table>
+			<section id="ng-view" class="main" ng-view="">
 			</section>
 			<footer></footer>
 		</div>
-		<i id="settings-btn" class="fa fa-cog" ng-click="ctrl.settings();" role="button"></i>
+		<i id="settings-btn" class="fa fa-cog" ng-click="settings();" role="button"></i>
 	</body>
 	<script src="../node_modules/angular/angular.min.js"></script>
+	<script src="../node_modules/angular-route/angular-route.min.js"></script>
 	<script src="js/ctapp.js"></script>
+	<script src="js/controllers/index.js"></script>
+	<script src="js/controllers/settings.js"></script>
 </html>
