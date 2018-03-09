@@ -8,11 +8,11 @@ body {
 	cursor: pointer;
 }
 
+.default-primary-icon-color { color: #4CAF50; }
+
 #settings-btn {
 	position: fixed;
 	bottom:10px;
-	right:10px;
-	color: red;
+	left:10px;
   font-size: 40px;
-  cursor: pointer;
 }

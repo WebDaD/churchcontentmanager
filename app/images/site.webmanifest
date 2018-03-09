@@ -1,6 +1,6 @@
 {
-    "name": "ContentTool",
-    "short_name": "ContentTool",
+    "name": "CCM",
+    "short_name": "CCM",
     "icons": [
         {
             "src": "android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#900000",
-    "background_color": "#900000",
+    "theme_color": "#4caf50",
+    "background_color": "#4caf50",
     "display": "standalone"
 }

@@ -1,22 +1,23 @@
 <!doctype html>
-<html  ng-app='ctApp'>
+<html  ng-app='ccmApp'>
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<link rel="stylesheet" href="../node_modules/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/navbar.css">
+		<link rel="stylesheet" href="css/palette.css">
 		<link rel="stylesheet" href="css/index.css">
 		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
 		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 		<link rel="manifest" href="images/site.webmanifest">
-		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#900000">
+		<link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#4caf50">
 		<link rel="shortcut icon" href="images/favicon.ico">
-		<meta name="msapplication-TileColor" content="#900000">
+		<meta name="msapplication-TileColor" content="#4caf50">
 		<meta name="msapplication-config" content="images/browserconfig.xml">
-		<meta name="theme-color" content="#900000">
-		<title>FeG ContentTool</title>
+		<meta name="theme-color" content="#4caf50">
+		<title>Church Content Manager</title>
 	</head>
 	<body>
 		<nav class="navbar navbar-default">
@@ -24,7 +25,7 @@
 				<div class="navbar-header">
 					<a class="navbar-brand" href="#">
 						<img src="images/android-chrome-192x192.png" style="width:72px;height:auto;"/>
-						FeG ContentTool
+						Church Content Manager
 					</a>
 				</div>
 				<div class="btn-group navbar-right" role="group" aria-label="...">
@@ -45,11 +46,11 @@
 			</section>
 			<footer></footer>
 		</div>
-		<i id="settings-btn" class="fa fa-cog" ng-click="settings();" role="button"></i>
+		<i id="settings-btn" class="fa fa-cog default-primary-icon-color image-btn" ng-click="settings();" role="button"></i>
 	</body>
 	<script src="../node_modules/angular/angular.min.js"></script>
 	<script src="../node_modules/angular-route/angular-route.min.js"></script>
-	<script src="js/ctapp.js"></script>
+	<script src="js/ccmApp.js"></script>
 	<script src="js/controllers/index.js"></script>
 	<script src="js/controllers/settings.js"></script>
 </html>

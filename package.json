@@ -1,10 +1,10 @@
 {
-  "name": "content_tool",
-  "productName": "FeG FFB Content Tool",
+  "name": "churchcontentmanager",
+  "productName": "Church Content Manager",
   "version": "0.0.1",
-  "description": "Small Tool to create Content for social Media",
+  "description": "Small Tool to create and Manage Content for many outlets",
   "license": "Unlicense",
-  "repository": "WebDaD/contentTool",
+  "repository": "WebDaD/churchcontentmanager",
   "main": "main.js",
   "author": {
     "name": "Dominik Sigmund",

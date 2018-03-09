@@ -1,6 +1,6 @@
 /* global angular */
 ;(function () {
-  angular.module('ctApp')
-    .controller('ctApp-Index', ['$scope', function ($scope) {
+  angular.module('ccmApp')
+    .controller('ccmApp-Index', ['$scope', function ($scope) {
     }])
 }())

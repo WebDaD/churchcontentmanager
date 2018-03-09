@@ -1,16 +1,16 @@
 /* global angular */
 const remote = require('electron').remote
 ;(function () {
-  angular.module('ctApp', ['ngRoute'])
+  angular.module('ccmApp', ['ngRoute'])
   .config(['$routeProvider', function ($routeProvider) {
     $routeProvider
       .when('/index', {
-        controller: 'ctApp-Index',
+        controller: 'ccmApp-Index',
         controllerAs: 'ctrl',
         templateUrl: 'templates/index.html'
       })
       .when('/settings', {
-        controller: 'ctApp-Settings',
+        controller: 'ccmApp-Settings',
         controllerAs: 'ctrl',
         templateUrl: 'templates/settings.html'
       })
