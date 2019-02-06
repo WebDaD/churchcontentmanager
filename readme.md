@@ -38,3 +38,5 @@ The Unlicense © [<%= name %>](<%= website %>)
   * GET sync.php?token=XXX <-- return JSON
   * POST sync.php?token=XXX (body:JSON) <-- Save JSON for Token (update or insert)
   * GET info.php <-- list of churches + token
+ * https://stackoverflow.com/questions/36773711/passing-data-to-windows-in-electron
+ * https://github.com/maximegris/angular-electron
